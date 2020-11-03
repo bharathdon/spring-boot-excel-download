@@ -88,7 +88,7 @@ public class TutorialExcelExporter {
 
 	public void export(HttpServletResponse response) throws IOException {
 
-
+writerHeaderRow();
 writeDataRows();
 		System.out.println(response.getContentType());
 		ServletOutputStream outputStream = response.getOutputStream();
